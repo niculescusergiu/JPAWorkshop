@@ -21,14 +21,14 @@ public class Details {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(nullable = false)
-    @Setter private String details;
+    @Setter private String email;
     @Column(nullable = false)
     @Setter private String name;
     @Column(nullable = false)
     @Setter private LocalDate birthDate;
 
-    public Details(String details, String name, LocalDate birthDate) {
-        this.details = details;
+    public Details(String email, String name, LocalDate birthDate) {
+        this.email = email;
         this.name = name;
         this.birthDate = birthDate;
     }

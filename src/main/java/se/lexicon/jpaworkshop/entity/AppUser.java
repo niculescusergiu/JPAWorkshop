@@ -25,10 +25,10 @@ public class AppUser {
     @JoinColumn(name = "user_details_id")
     @Setter private Details userDetails;
 
-    public AppUser(String username, String password, LocalDateTime regDate, Details userDetails) {
+    public AppUser(String username, String password, LocalDateTime regDate) {
         this.username = username;
         this.password = password;
         this.regDate = regDate;
-        this.userDetails = userDetails;
+
     }
 }

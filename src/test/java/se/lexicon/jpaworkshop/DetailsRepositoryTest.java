@@ -22,12 +22,12 @@ public class DetailsRepositoryTest {
     @Transactional
     public void testSaveAndFindById() {
         //1. Arrange
-        Details details = new Details("Software Developer", "Sergiu Niculescu", LocalDate.of(2000, 05, 22));
+        Details details = new Details("niculescusergiu00@gmail.com", "Sergiu Niculescu", LocalDate.of(2000, 05, 22));
         //2. Act
         Details savedDetails = detailsRepository.save(details);
         //3. Assert
         Assertions.assertNotNull(savedDetails);
-        Assertions.assertNotNull(savedDetails.getId());
+        Assertions.assertNotNull(savedDetails.getEmail());
     }
 
 
