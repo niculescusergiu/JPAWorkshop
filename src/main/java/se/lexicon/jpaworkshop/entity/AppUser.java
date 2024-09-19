@@ -21,7 +21,7 @@ public class AppUser {
     @Setter private String password;
     @Setter private LocalDateTime regDate;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "user_details_id")
     @Setter private Details userDetails;
 
